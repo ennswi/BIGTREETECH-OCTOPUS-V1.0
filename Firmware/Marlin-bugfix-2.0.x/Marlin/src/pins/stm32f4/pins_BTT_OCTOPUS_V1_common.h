@@ -172,33 +172,40 @@
   #define Z_CS_PIN                          PC6
 #endif
 
-#define Z2_STEP_PIN                         PG4   // MOTOR 3
-#define Z2_DIR_PIN                          PC1
-#define Z2_ENABLE_PIN                       PA0
-#ifndef Z2_CS_PIN
-  #define Z2_CS_PIN                         PC7
-#endif
+//#define Z2_STEP_PIN                         PG4   // MOTOR 3
+//#define Z2_DIR_PIN                          PC1
+//#define Z2_ENABLE_PIN                       PA0
+//#ifndef Z2_CS_PIN
+//  #define Z2_CS_PIN                         PC7
+//#endif
 
-#define E0_STEP_PIN                         PF9   // MOTOR 4
-#define E0_DIR_PIN                          PF10
-#define E0_ENABLE_PIN                       PG2
+#define E0_STEP_PIN                         PG4   // MOTOR 3
+#define E0_DIR_PIN                          PC1
+#define E0_ENABLE_PIN                       PA0
 #ifndef E0_CS_PIN
-  #define E0_CS_PIN                         PF2
+  #define E0_CS_PIN                         PC7
 #endif
 
-#define E1_STEP_PIN                         PC13  // MOTOR 5
-#define E1_DIR_PIN                          PF0
-#define E1_ENABLE_PIN                       PF1
+#define E1_STEP_PIN                         PF9  // MOTOR 4
+#define E1_DIR_PIN                          PF10
+#define E1_ENABLE_PIN                       PG2
+
 #ifndef E1_CS_PIN
-  #define E1_CS_PIN                         PE4
+  #define E1_CS_PIN                         PF2
 #endif
 
-#define E2_STEP_PIN                         PE2   // MOTOR 6
-#define E2_DIR_PIN                          PE3
-#define E2_ENABLE_PIN                       PD4
+#define E2_STEP_PIN                         PC13   // MOTOR 5
+#define E2_DIR_PIN                          PF0
+#define E2_ENABLE_PIN                       PF1
 #ifndef E2_CS_PIN
+  #define E2_CS_PIN                         PE4
+#endif
 
-  #define E2_CS_PIN                         PE1
+#define E3_STEP_PIN                         PE2   // MOTOR 6
+#define E3_DIR_PIN                          PE3
+#define E3_ENABLE_PIN                       PD4
+#ifndef E3_CS_PIN
+  #define E3_CS_PIN                         PE1
 #endif
 
 #define E3_STEP_PIN                         PE6   // MOTOR 7
@@ -207,6 +214,7 @@
 #ifndef E3_CS_PIN
   #define E3_CS_PIN                         PD3
 #endif
+
 
 //
 // Temperature Sensors
@@ -230,12 +238,12 @@
 #define HEATER_2_PIN                        PB10  // Heater2
 #define HEATER_3_PIN                        PB11  // Heater3
 
-#define FAN_PIN                             PA8   // Fan0
-#define FAN1_PIN                            PE5   // Fan1
-#define FAN2_PIN                            PD12  // Fan2
+//#define FAN_PIN                             PA8   // Fan0
+#define FAN_PIN                            PE5   // Fan1
+#define FAN2_PIN                            PD12  // Fan2 
 #define FAN3_PIN                            PD13  // Fan3
 #define FAN4_PIN                            PD14  // Fan4
-#define FAN5_PIN                            PD15  // Fan5
+//#define FAN5_PIN                            PD15  // Fan5
 
 //
 // SD Support
